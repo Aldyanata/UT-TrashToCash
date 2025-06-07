@@ -163,10 +163,10 @@ $user  = !empty($datauser)       ? end($datauser)       : [];
           
           <div class="row">
             <!-- Form Pembelian -->
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <form action="<?= base_url('index.php/transaksi/pembelian'); ?>" method="post">
                 <div class="card">
-                  <div class="card-header">
+                  <div class="card-header" style="background-color: purple; color: white;">
                     <h5 class="card-title">Pembelian</h5>
                   </div>
                   <div class="card-body">
@@ -245,10 +245,10 @@ $user  = !empty($datauser)       ? end($datauser)       : [];
 
             <!-- Form Penjualan (Hanya Admin) -->
             <?php if($user['level'] == 'admin'): ?>
-            <div class="col-lg-6">
+            <div class="col-lg-12" >
               <form action="<?= base_url('index.php/transaksi/penjualan'); ?>" method="post">
                 <div class="card">
-                  <div class="card-header">
+                  <div class="card-header" style="background-color: yellow; ">
                     <h5 class="card-title">Penjualan</h5>
                   </div>
                   <div class="card-body">
